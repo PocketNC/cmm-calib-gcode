@@ -1,0 +1,13 @@
+%
+g21
+g90
+g0 z0
+
+M66 E0 L0
+o<cmm_connect> call
+
+(B_AXIS)
+M66 E0 L0
+o<v2-calib-characterize-b> call
+%
+

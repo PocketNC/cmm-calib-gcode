@@ -1,0 +1,21 @@
+%
+g21
+g90
+g0 z0
+
+M66 E0 L0
+o<cmm_connect> call
+
+(A_AXIS)
+M66 E0 L0
+o<v2-calib-zero-a> call
+#<aAngleTrueZero> = [#<_value>]
+
+M66  E0 L0
+o<cmm_go_to_clearance_y> call
+M66 E0 L0
+o<v2-calib-characterize-a> call [#<aAngleTrueZero>]
+
+M66 E0 L0
+g0 a#<aAngleTrueZero>
+%

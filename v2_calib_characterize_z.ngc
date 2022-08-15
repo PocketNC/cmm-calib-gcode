@@ -1,0 +1,15 @@
+%
+g21
+g90
+
+M66 E0 L0
+o<cmm_connect> call
+
+(Z AXIS)
+M66 E0 L0
+o<v2-calib-characterize-z> call
+M66 E0 L0
+o<cmm_go_to_clearance_z> call
+g0 z0
+
+%
