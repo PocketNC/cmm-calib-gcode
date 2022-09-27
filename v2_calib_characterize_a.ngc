@@ -13,6 +13,10 @@ o<v2-calib-zero-a> call
 
 M66  E0 L0
 o<cmm_go_to_clearance_y> call
+
+g0 a-25
+g0 a-24.5
+
 M66 E0 L0
 o<v2-calib-characterize-a> call [#<aAngleTrueZero>]
 

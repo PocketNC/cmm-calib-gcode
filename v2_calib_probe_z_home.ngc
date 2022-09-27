@@ -1,0 +1,10 @@
+%
+
+M66 E0 L0
+o<cmm_connect> call
+
+(Z AXIS)
+M66 E0 L0
+o<v2_calib_probe_z_home> call [0] [0]
+
+%

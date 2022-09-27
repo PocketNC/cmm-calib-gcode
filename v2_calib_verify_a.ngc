@@ -8,6 +8,6 @@ o<cmm_connect> call
 
 (A_AXIS)
 M66 E0 L0
-o<v2-calib-characterize-a> call
+o<v2-calib-verify-a> call
 %
 

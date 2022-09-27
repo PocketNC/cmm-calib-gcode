@@ -1,10 +1,10 @@
 %
-g21
-g90
 
 M66 E0 L0
 o<cmm_connect> call
-M66 E0 L0
-o<v2_calib_setup_verify> call
-%
 
+(X AXIS)
+M66 E0 L0
+o<v2_calib_verify_x_home> call
+
+%
