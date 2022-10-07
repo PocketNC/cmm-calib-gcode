@@ -1,7 +1,11 @@
 %
-
+g0 y-63a0
 M66 E0 L0
 o<cmm_connect> call
+M66 E0 L0
+o<cmm_go_to_clearance_z> call
+
+g0 y-63
 
 (X AXIS)
 M66 E0 L0

@@ -7,4 +7,7 @@ o<cmm_connect> call
 M66 E0 L0
 o<v2_calib_verify_a_home> call
 
+M66 E0 L0
+o<cmm_go_to_clearance_z> call
+
 %

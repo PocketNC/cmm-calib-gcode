@@ -2,6 +2,8 @@
 g21
 g90
 
+g0 x0
+
 M66 E0 L0
 o<cmm_connect> call
 
