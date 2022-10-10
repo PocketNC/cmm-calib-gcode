@@ -7,6 +7,9 @@ g0 y-63
 M66 E0 L0
 o<cmm_connect> call
 
+M66  E0 L0
+o<cmm_go_to_clearance_z> call
+
 (A_AXIS)
 M66 E0 L0
 o<v2-calib-zero-a> call
