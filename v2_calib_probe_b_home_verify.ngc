@@ -9,7 +9,7 @@ g0 y-63
 
 (X AXIS)
 M66 E0 L0
-o<v2_calib_probe_b_home> call [-63] [-5.5]
+o<v2_calib_probe_b_home> call [-63] [0]
 
 M66 E0 L0
 o<cmm_go_to_clearance_z> call
