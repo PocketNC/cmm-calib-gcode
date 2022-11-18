@@ -1,15 +1,15 @@
 %
-g0 y-63a0
+g0 y0a0
 M66 E0 L0
 o<cmm_connect> call
 M66 E0 L0
 o<cmm_go_to_clearance_z> call
 
-g0 y-63
+g0 y0
 
 (X AXIS)
 M66 E0 L0
-o<v2_calib_probe_b_home> call [-63] [0]
+o<v2_calib_probe_b_home> call [0] [0]
 
 M66 E0 L0
 o<cmm_go_to_clearance_z> call
