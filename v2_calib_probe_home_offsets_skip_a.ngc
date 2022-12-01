@@ -6,25 +6,8 @@ o<cmm_connect> call
 o<cmm_setup> call
 o<v2_calib_setup_verify> call
 
-#<aAngle> = 90
 g21
-g0 z0
-g0 a90b0y0
-
-#<yPos> = 0
-#<aAngleMeas> = 90
-#<aErrAbs> = 0
-o100 do
-  g0 a85
-  g0 a[#<aAngle>]
-  M66 E0 L0
-  o<v2_calib_find_pos_a> call [#<yPos>] [#<aAngle>]
-  #<aAngleMeas> = [#<_value>]
-  #<aErr> = [ #<aAngleMeas> - 90 ]
-  #<aAngle> = [#<aAngle> - #<aErr>]
-  #<aErrAbs> = [ ABS[ #<aErr> ] ]
-  o<cmm_go_to_clearance_y> call
-o100 while [#<aErrAbs> GT 0.003]
+#<aAngle> = 88.994
 
 o<cmm_go_to_clearance_y> call
 o<cmm_go_to_clearance_z> call
