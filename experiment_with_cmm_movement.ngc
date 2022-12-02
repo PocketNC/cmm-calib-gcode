@@ -1,0 +1,13 @@
+%
+o<cmm_disconnect> call
+o<reload_calib> call
+o<cmm_set_skip_updates> call [1]
+;o<cmm_set_skip_cmm> call [1]
+o<cmm_connect> call
+o<cmm_setup> call
+o<v2_calib_setup_verify> call
+
+o<experiment_with_cmm_movement> call
+
+o<cmm_disconnect> call
+%
