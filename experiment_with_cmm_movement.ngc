@@ -7,7 +7,51 @@ o<cmm_connect> call
 o<cmm_setup> call
 o<v2_calib_setup_verify> call
 
-o<experiment_with_cmm_movement> call
+o<cmm_go_to_clearance_z> call
+
+G20
+
+#<_ProbeFastFeed> = 40.0  ( feed rate for moving to _ProbeFastZ )
+#<_ProbeFeed1> = 20.0  ( feed rate for touching switch/touch-off plate first time )
+#<_ProbeFeed2> = 2.0  ( feed rate for touching switch/touch-off plate second time )
+#<_ProbeFastZ> = 0.0  ( machine Z coord to move to before starting probe, longest tool should not touch switch at this Z )
+#<_ProbeMinZ> = -3.25  ( machine Z coord to stop probe, shortest tool must touch switch at this Z, must be > min Z )
+#<_ProbeRetract> = 0.1   ( small distance to retract before approaching switch/touch-off plate second time )
+
+G90
+G49
+G53 G0 Z0
+
+G0 X[#<_ini[TOOL_PROBE]PROBE_X>] 
+G0 Y[#<_ini[TOOL_PROBE]PROBE_Y>]
+G0 A[#<_ini[TOOL_PROBE]PROBE_A>]
+
+G53 G1 F[#<_ProbeFastFeed>] Z[#<_ProbeFastZ>]( move tool closer to switch -- we shouldn't hit it )
+G54 G1 F[#<_ProbeFeed1>] G91
+
+G38.2 Z[#<_ProbeMinZ> - #<_ProbeFastZ>] F[#<_ProbeFeed1>]    ( trip switch slowly )
+G0 Z[#<_ProbeRetract>]
+G38.2 Z[#<_ProbeRetract>*-1.25] F[#<_ProbeFeed2>]   ( trip switch very slowly )
+G90
+
+#<_ToolZProbe> = [#5063 + #5223]
+
+G0 Z0
+G0 Y2.5
+G0 Z#<_ToolZProbe>
+
+#<x_mm> = [ #<_ini[TOOL_PROBE]PROBE_X> * 25.4 ]
+#<y_mm> = [ #<_ini[TOOL_PROBE]PROBE_Y> * 25.4 ]
+#<z_mm> = [ #<_ToolZProbe> * 25.4 ]
+
+; Should probably do this another way, perhaps through a feature, but current this is how
+; the calib.probe_spindle_at_tool_probe python function gets the approximate spindle position
+(LOGOPEN,/var/opt/pocketnc/xyz.txt)
+(LOG,#<x_mm>,#<y_mm>,#<z_mm>)
+(LOGCLOSE)
+
+M66 E0 L0
+o<v2_calib_probe_spindle_at_tool_probe> call
 
 o<cmm_disconnect> call
 %
