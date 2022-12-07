@@ -5,9 +5,8 @@ o<cmm_set_skip_updates> call [1]
 o<cmm_connect> call
 o<cmm_setup> call
 o<v2_calib_setup_verify> call
-
 g21
-g0 z0
+g0 x63.5z0
 g0 a90b0y0
 
 #<yPos> = 0
@@ -59,5 +58,7 @@ o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][225]
 M66 E0 L0
 o<cmm_go_to_clearance_y> call
 o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
+
+o<v2_calib_calc_home_offsets> call
 
 %

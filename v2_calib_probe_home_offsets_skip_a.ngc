@@ -7,26 +7,46 @@ o<cmm_setup> call
 o<v2_calib_setup_verify> call
 
 g21
-#<aAngle> = 88.994
+g0 z0
+g0 a90b0y0
+
+#<yPos> = 0
+#<aAngle> = 89.023
+#<aAngleMeas> = 90
+#<aErrAbs> = 0
+
 
 o<cmm_go_to_clearance_y> call
 o<cmm_go_to_clearance_z> call
 
+g0 b45
+M66 E0 L0
+o<v2-calib-align-fixture-perp-y> call [#<yPos>][#<aAngle>][45]
+#<bAngle> = [#<_value>]
+M66 E0 L0
+o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>]
+M66 E0 L0
 
 g0 b45
-o<v2-calib-align-fixture-perp-y> call [#<aAngle>] [45]
-o<v2_calib_probe_home_offset_y> call [0][90][45]
-
-g0 b45
-o<v2-calib-align-fixture-perp-x> call [45]
-o<v2_calib_probe_home_offset_x> call [0][90][45]
-
-g0 b225
-o<v2-calib-align-fixture-perp-y> call [225]
-o<v2_calib_probe_home_offset_y> call [0][90][225]
+M66 E0 L0
+o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][45]
+M66 E0 L0
+#<bAngle> = [#<_value>]
+M66 E0 L0
+o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
 
 g0 b225
-o<v2-calib-align-fixture-perp-x> call [225]
-o<v2_calib_probe_home_offset_x> call [0][90][225]
+M66 E0 L0
+o<v2-calib-align-fixture-perp-y> call [#<yPos>][#<aAngle>][225]
+#<bAngle> = [#<_value>]
+M66 E0 L0
+o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>]
+
+g0 b225
+M66 E0 L0
+o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][225]
+#<bAngle> = [#<_value>]
+M66 E0 L0
+o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
 
 %
