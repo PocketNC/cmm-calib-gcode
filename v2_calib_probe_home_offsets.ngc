@@ -9,6 +9,8 @@ g21
 g0 x63.5z0
 g0 a90b0y0
 
+o<cmm_go_to_clearance_y> call
+
 #<yPos> = 0
 #<aAngle> = 90
 #<aAngleMeas> = 90
