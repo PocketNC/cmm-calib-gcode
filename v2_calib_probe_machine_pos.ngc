@@ -7,10 +7,6 @@ g0 a0b0
 
 M66 E0 L0
 o<cmm_connect> call
-M66 E0 L0
 o<v2_calib_probe_machine_pos> call
-M66 E0 L0
-o<cmm_go_to_clearance_z> call
-M66 E0 L0
 %
 

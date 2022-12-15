@@ -1,0 +1,21 @@
+%
+g21
+g90
+
+G53 G0 Z0
+G0 X25.4
+G0 X0
+G0 A0B0
+G0 Y63.5
+G53 G0 Z1
+G53 G0 Z0
+
+M66 E0 L0
+o<cmm_connect> call
+
+(SPINDLE SHAFT AND TIP)
+o<v2_calib_probe_spindle_pos_v2_50> call [0][0]
+
+o<cmm_go_to_clearance_y> call
+
+%
