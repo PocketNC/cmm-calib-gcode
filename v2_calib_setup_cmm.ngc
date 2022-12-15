@@ -1,7 +1,5 @@
 %
-M66 E0 L0
 o<cmm_connect> call
-M66 E0 L0
-o<cmm_setup> call
+o<v2_calib_setup_cmm> call
 %
 
