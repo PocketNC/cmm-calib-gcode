@@ -1,6 +1,0 @@
-%
-o<cmm_connect> call
-o<v2_calib_setup_cmm_for_v2> call
-o<cmm_go_to_clearance_z> call 
-o<cmm_disconnect> call
-%
