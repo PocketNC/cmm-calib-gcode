@@ -4,18 +4,20 @@ g90
 
 M66 E0 L0
 o<cmm_connect> call
+o<cmm_go_to_clearance_y> call
 
-M66 E0 L0
-o<cmm_go_to_clearance_z> call
+G53 g0 z0
+G53 g0 x0
+G53 g0 a0b0
 
-g0 z0
-g0 y63.5
+G53 g0 y25.4
+G53 g0 y0
 
-(BALL IN FIXTURE)
 M66  E0 L0
-o<v2_calib_probe_fixture_ball_pos> call [63.5]
+o<v2_calib_probe_fixture_ball_pos> call [0]
+o<v2_calib_verify_fixture_ball_pos> call
 
 M66 E0 L0
-o<cmm_go_to_clearance_z> call
+o<cmm_go_to_clearance_y> call
 
 %
