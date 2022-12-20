@@ -2,9 +2,6 @@
 
 M66 E0 L0
 o<cmm_connect> call
-
-(X AXIS)
-M66 E0 L0
 o<v2_calib_verify_z_home> call
 
 %
