@@ -1,4 +1,5 @@
 %
+o<v2_calib_init_home_offset_state> call
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 g21
