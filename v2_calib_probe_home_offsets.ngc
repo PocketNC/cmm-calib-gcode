@@ -1,5 +1,5 @@
 %
-o<v2_calib_init_home_offset_state> call
+o<v2_calib_init_home_offsets_state> call
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 g21
@@ -20,11 +20,11 @@ o100 do
   #<aErr> = [ #<aAngleMeas> - 90 ]
   #<aAngle> = [#<aAngle> - #<aErr>]
   #<aErrAbs> = [ ABS[ #<aErr> ] ]
-  o<cmm_go_to_clearance_y> call
+  o<cmm_go_to_clearance_x> call
 o100 while [#<aErrAbs> GT 0.003]
 
+o<cmm_go_to_clearance_x> call
 o<cmm_go_to_clearance_y> call
-o<cmm_go_to_clearance_z> call
 
 g0 b45
 M66 E0 L0
@@ -58,5 +58,6 @@ o<cmm_go_to_clearance_y> call
 o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
 
 o<v2_calib_calc_home_offsets> call
+o<cmm_go_to_clearance_y> call
 
 %

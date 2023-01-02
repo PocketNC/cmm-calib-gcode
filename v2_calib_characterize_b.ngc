@@ -12,6 +12,7 @@ o<cmm_go_to_clearance_z> call
 
 (B_AXIS)
 M66 E0 L0
+o<v2_calib_prep_probe_b> call
 o<v2-calib-zero-b> call
 #<bAngleTrueZero> = [#<_value>]
 
