@@ -1,0 +1,5 @@
+%
+M66 E0 L0
+o<cmm_connect> call
+o<cmm_go_to_clearance_z> call
+%
