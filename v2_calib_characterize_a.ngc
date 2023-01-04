@@ -15,6 +15,7 @@ o<v2-calib-zero-a> call
 
 M66  E0 L0
 o<cmm_go_to_clearance_y> call
+o<v2_calib_probe_a0> call [0] [0] [#<aAngleTrueZero>]
 
 g0 a-25
 g0 a-24.5
