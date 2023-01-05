@@ -11,14 +11,14 @@ o<cmm_go_to_clearance_z> call
 
 (B_AXIS)
 M66 E0 L0
-o<v2_calib_prep_probe_b> call
+o<v2_calib_prep_probe_b_line> call
 o<v2-calib-zero-b> call
 #<bAngleTrueZero> = [#<_value>]
 
 M66  E0 L0
 o<cmm_go_to_clearance_z> call
 M66 E0 L0
+o<v2_calib_prep_probe_fixture_ball> call
 o<v2-calib-characterize-b> call [#<bAngleTrueZero>]
-
+o<cmm_go_to_clearance_z> call
 %
-

@@ -9,12 +9,13 @@ M66 E0 L0
 o<v2_calib_init_characterize_a> call
 o<cmm_connect> call
 o<cmm_go_to_clearance_z> call
-o<v2_calib_prep_probe_a> call
+o<v2_calib_prep_probe_a_home> call
 o<v2-calib-zero-a> call
 #<aAngleTrueZero> = [#<_value>]
 
 M66  E0 L0
 o<cmm_go_to_clearance_y> call
+o<v2_calib_prep_probe_a> call
 o<v2_calib_probe_a0> call [0] [0] [#<aAngleTrueZero>]
 
 g0 a-25
