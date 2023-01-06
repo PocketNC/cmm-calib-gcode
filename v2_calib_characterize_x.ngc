@@ -5,6 +5,6 @@ o<cmm_connect> call
 o<v2_calib_init_characterize_x> call
 o<v2-calib-characterize-x> call [7]
 M66 E0 L0
-o<cmm_go_to_clearance_z> call
+o<cmm_go_to_clearance_y> call
 
 %

@@ -1,5 +1,13 @@
 %
 
+g21
+g90
+
+G53 G0 Z0
+G0 X0
+G0 A0B0
+G0 Y0
+
 M66 E0 L0
 o<cmm_connect> call
 o<v2_calib_probe_y_home> call [0]
