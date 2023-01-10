@@ -1,7 +1,8 @@
 %
+M66 E0 L0
 o<cmm_connect> call
-
-o<cmm_go_to_clearance_z> call
+o<cmm_go_to_clearance_y> call
+M66 E0 L0
 
 G20
 
@@ -38,17 +39,9 @@ G0 Z#<_ToolZProbe>
 #<y_mm> = [ #<_ini[TOOL_PROBE]PROBE_Y> * 25.4 ]
 #<z_mm> = [ #<_ToolZProbe> * 25.4 ]
 
-; Should probably do this another way, perhaps through a feature, but current this is how
-; the calib.probe_spindle_at_tool_probe python function gets the approximate spindle position
-(LOGOPEN,/var/opt/pocketnc/xyz.txt)
-(LOG,#<x_mm>,#<y_mm>,#<z_mm>)
-(LOGCLOSE)
-
 M66 E0 L0
-o<v2_calib_probe_spindle_at_tool_probe> call
-
-M66 E0 L0
-o<cmm_go_to_clearance_z> call
+o<v2_calib_probe_spindle_at_tool_probe> call [#<x_mm>][#<y_mm>][#<z_mm>]
+o<cmm_go_to_clearance_y> call
 
 g21
 g90
@@ -58,12 +51,7 @@ g0 y0a90b0
 (FIXTURE TOP PLANE)
 M66  E0 L0
 o<v2_calib_probe_fixture_plane_a90> call [0]
-
-M66 E0 L0
-o<cmm_go_to_clearance_z> call
-
-M66 E0 L0
-o<v2_calib_tool_probe_offset> call
-
+o<cmm_go_to_clearance_y> call
+o<v2_calib_calc_tool_probe_offset> call
 o<cmm_disconnect> call
 %
