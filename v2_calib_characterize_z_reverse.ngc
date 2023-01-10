@@ -1,0 +1,9 @@
+%
+o<cmm_connect> call
+o<v2_calib_init_characterize_z_reverse> call
+o<v2-calib-characterize-z-reverse> call [20]
+
+M66 E0 L0
+o<cmm_go_to_clearance_y> call
+
+%
