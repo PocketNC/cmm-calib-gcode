@@ -2,7 +2,7 @@
 g21
 g90
 g0 z0
-g0 y0
+g0 y0a0b0
 
 M66 E0 L0
 o<v2_calib_init_characterize_b_sphere_reverse> call
@@ -15,6 +15,7 @@ o<v2_calib_prep_probe_b_line> call
 o<v2-calib-zero-b-reverse> call
 #<bAngleTrueZero> = [#<_value>]
 
+M66  E0 L0
 o<v2_calib_prep_probe_fixture_ball> call
 o<v2_calib_probe_b0_sphere_reverse> call [0] [0] [#<bAngleTrueZero>]
 
