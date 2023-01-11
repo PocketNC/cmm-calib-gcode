@@ -6,7 +6,7 @@ g0 y0
 
 
 M66 E0 L0
-o<v2_calib_init_characterize_a> call
+o<v2_calib_init_characterize_a_line> call
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 o<v2_calib_prep_probe_fixture_fin> call
@@ -15,18 +15,17 @@ o<v2-calib-zero-a> call
 
 M66  E0 L0
 o<cmm_go_to_clearance_y> call
-o<v2_calib_prep_probe_fixture_ball> call
-o<v2_calib_probe_a0> call [0] [0] [#<aAngleTrueZero>]
+o<v2_calib_probe_a0_line> call [0] [0] [#<aAngleTrueZero>]
 
 g0 a-25
 g0 a-24.5
 
 M66 E0 L0
-o<v2-calib-characterize-a> call [#<aAngleTrueZero>]
+o<v2-calib-characterize-a-line> call [#<aAngleTrueZero>]
 
 M66  E0 L0
+o<cmm_go_to_clearance_x> call
 o<cmm_go_to_clearance_y> call
 
-M66 E0 L0
 g0 a#<aAngleTrueZero>
 %

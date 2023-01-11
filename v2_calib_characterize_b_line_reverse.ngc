@@ -1,0 +1,23 @@
+%
+g21
+g90
+g0 z0
+g0 y0
+
+M66 E0 L0
+o<v2_calib_init_characterize_b> call
+o<cmm_connect> call
+o<cmm_go_to_clearance_y> call
+
+(B_AXIS)
+M66 E0 L0
+o<v2_calib_prep_probe_b_line> call
+o<v2-calib-zero-b-reverse> call
+#<bAngleTrueZero> = [#<_value>]
+o<v2_calib_probe_b0_line_reverse> call [0] [0] [#<bAngleTrueZero>]
+
+M66  E0 L0
+o<cmm_go_to_clearance_z> call
+o<v2-calib-characterize-b-line-reverse> call [#<bAngleTrueZero>]
+o<cmm_go_to_clearance_y> call
+%
