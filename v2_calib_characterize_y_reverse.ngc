@@ -1,7 +1,7 @@
 %
 
 o<cmm_connect> call
-o<v2_calib_init_characterize_y_reverse> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_Y_REVERSE>]
 o<v2-calib-characterize-y-reverse> call [20]
 
 M66 E0 L0

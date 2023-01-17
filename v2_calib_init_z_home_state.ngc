@@ -1,5 +1,5 @@
 %
 
-o<v2_calib_init_z_home_state> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_HOMING_Z>]
 
 %

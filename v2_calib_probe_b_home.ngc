@@ -4,5 +4,5 @@ g0 y0a0b0
 
 M66 E0 L0
 o<cmm_connect> call
-o<v2_calib_probe_b_home> call [0] [-5.5]
+o<v2_calib_probe_fixture_line> call [0] [-5.5] [#<_CALIB_HOMING_B>]
 %

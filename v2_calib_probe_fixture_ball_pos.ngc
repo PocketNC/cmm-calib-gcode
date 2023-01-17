@@ -14,6 +14,11 @@ G53 g0 y25.4
 G53 g0 y0
 
 M66  E0 L0
+; Don't do head touches, as we want to provide more wiggle room
+; than head touches allow for. Other fixture ball routines can
+; use head touches once we have a more accurate position of the ball
+; that we're measuring here.
+o<cmm_set_common_probe_props> call [0] [5] [2] [5]
 o<v2_calib_probe_fixture_ball_pos> call [0]
 o<v2_calib_verify_fixture_ball_pos> call
 

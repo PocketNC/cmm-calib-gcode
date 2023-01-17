@@ -6,7 +6,7 @@ g0 y0a0b0
 
 
 M66 E0 L0
-o<v2_calib_init_characterize_a_sphere_reverse> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_A_SPHERE_REVERSE>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 o<v2_calib_prep_probe_fixture_fin> call

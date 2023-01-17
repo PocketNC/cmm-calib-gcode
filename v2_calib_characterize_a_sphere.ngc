@@ -6,7 +6,7 @@ g0 y0a0b0
 
 
 M66 E0 L0
-o<v2_calib_init_characterize_a_sphere> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_A_SPHERE>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 o<v2_calib_prep_probe_fixture_fin> call
@@ -15,13 +15,14 @@ o<v2-calib-zero-a> call
 
 M66  E0 L0
 o<cmm_go_to_clearance_y> call
-o<v2_calib_prep_probe_fixture_ball> call
+o<cmm_set_common_probe_props> call [1] [3] [2] [5]
 o<v2_calib_probe_a0_sphere> call [0] [0] [#<aAngleTrueZero>]
 
 g0 a-25
 g0 a-24.5
 
 M66 E0 L0
+o<cmm_set_common_probe_props> call [1] [3] [2] [5]
 o<v2-calib-characterize-a-sphere> call [#<aAngleTrueZero>]
 
 M66  E0 L0

@@ -1,6 +1,6 @@
 %
 
-o<v2_calib_init_a_home_state> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_HOMING_A>]
 o<cmm_connect> call
 o<v2_calib_prep_probe_fixture_fin> call
 
