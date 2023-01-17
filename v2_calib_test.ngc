@@ -1,0 +1,3 @@
+%
+;py,logger.debug("params %s", this.params["_calib_homing_x"])
+%
