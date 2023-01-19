@@ -2,6 +2,8 @@
 
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_HOMING_B>]
 o<cmm_connect> call
+o<cmm_set_common_probe_props> call [1] [10] [10] [15]
 o<v2_calib_prep_probe_b_line> call
+
 
 %

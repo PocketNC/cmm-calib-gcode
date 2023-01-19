@@ -11,6 +11,7 @@ o<cmm_go_to_clearance_y> call
 
 (B_AXIS)
 M66 E0 L0
+o<cmm_set_common_probe_props> call [1] [15] [10] [15]
 o<v2_calib_prep_probe_b_line> call
 o<v2-calib-zero-b> call
 #<bAngleTrueZero> = [#<_value>]
