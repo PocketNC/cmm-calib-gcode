@@ -21,7 +21,7 @@ o<cmm_set_common_probe_props> call [1] [3] [2] [5]
 o<v2_calib_probe_fixture_ball_top> call [0] [#<bAngleTrueZero>] [#<_CALIB_CHARACTERIZE_B_SPHERE>]
 
 M66  E0 L0
-o<cmm_go_to_clearance_z> call
+o<cmm_go_to_clearance_y> call
 o<cmm_set_common_probe_props> call [1] [3] [2] [5]
 o<v2-calib-characterize-b-sphere> call [#<bAngleTrueZero>]
 o<cmm_go_to_clearance_y> call
