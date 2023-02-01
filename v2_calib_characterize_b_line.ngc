@@ -8,16 +8,18 @@ M66 E0 L0
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_B_LINE>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
+o<v2_calib_prep_probe_b_line> call
 
 (B_AXIS)
 M66 E0 L0
-o<v2_calib_prep_probe_b_line> call
 o<v2-calib-zero-b> call
 #<bAngleTrueZero> = [#<_value>]
 
 M66  E0 L0
 o<v2_calib_probe_b0_line> call [0] [0] [#<bAngleTrueZero>]
 o<cmm_go_to_clearance_z> call
-o<v2-calib-characterize-b-line> call [#<bAngleTrueZero>]
+
+M66 E0 L0
+o<v2-calib-characterize-b-line> call [#<bAngleTrueZero>] [#<_CALIB_CHARACTERIZE_B_LINE>]
 o<cmm_go_to_clearance_y> call
 %

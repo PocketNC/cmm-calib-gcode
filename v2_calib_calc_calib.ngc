@@ -1,5 +1,11 @@
 %
 M66 E0 L0
 o<v2_calib_calc_calib> call
+o<v2_calib_init_apply_calib_stage> call
+o<v2_calib_calc_a_comp> call
+o<v2_calib_calc_b_comp> call
+o<v2_calib_calc_home_offsets> call
+o<v2_calib_calc_tool_offsets> call
+o<v2_calib_write_calib> call
 %
 

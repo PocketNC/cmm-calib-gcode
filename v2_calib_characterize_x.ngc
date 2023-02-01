@@ -3,7 +3,7 @@
 M66 E0 L0
 o<cmm_connect> call
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_X>]
-o<v2-calib-characterize-x> call [20]
+o<v2-calib-characterize-x> call [7]
 M66 E0 L0
 o<cmm_go_to_clearance_y> call
 

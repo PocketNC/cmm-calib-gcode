@@ -1,0 +1,7 @@
+%
+
+o<cmm_connect> call
+o<cmm_go_to_clearance_y> call
+o<v2_calib_init_probe_features_stage> call [#<_CALIB_VERIFY_HOMING_Y>]
+
+%

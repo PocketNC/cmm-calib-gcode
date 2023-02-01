@@ -10,18 +10,17 @@ o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_A_LINE>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 o<v2_calib_prep_probe_fixture_fin> call
+
+M66  E0 L0
 o<v2-calib-zero-a> call
 #<aAngleTrueZero> = [#<_value>]
 
 M66  E0 L0
 o<v2_calib_probe_a0_line> call [0] [0] [#<aAngleTrueZero>]
 o<cmm_go_to_clearance_x> call
-
-g0 a-25
-g0 a-24.5
-
+  
 M66 E0 L0
-o<v2-calib-characterize-a-line> call [#<aAngleTrueZero>]
+o<v2-calib-characterize-a-line> call [#<_CALIB_CHARACTERIZE_A_LINE>]
 
 M66  E0 L0
 o<cmm_go_to_clearance_x> call

@@ -1,6 +1,6 @@
 %
 
 (A AXIS)
-o<v2_calib_verify_a_home> call
+o<v2_calib_verify_a_home> call [#<_CALIB_HOMING_A>]
 
 %
