@@ -3,8 +3,6 @@ o<v2_calib_init_probe_offsets_state> call
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 
-
-(FIXTURE TOP PLANE)
 g21
 g90
 g0 z0
@@ -12,6 +10,15 @@ g0 x0
 g0 y25.4
 g0 y0
 g0 a0b0
+
+M66 E0 L0
+o<v2-calib-zero-a> call
+#<a0> = #<_value>
+
+M66 E0 L0
+o<cmm_go_to_clearance_y> call
+
+(FIXTURE TOP PLANE)
 M66 E0 L0
 o<v2_calib_probe_top_plane> call [0]
 
@@ -99,7 +106,7 @@ G53 G0 Z0
 
 G0 X[#<_ini[TOOL_PROBE]PROBE_X>] 
 G0 Y[#<_ini[TOOL_PROBE]PROBE_Y>]
-G0 A[#<_ini[TOOL_PROBE]PROBE_A>]
+G0 A[#<a0>]
 
 G53 G1 F[#<_ProbeFastFeed>] Z[#<_ProbeFastZ>]( move tool closer to switch -- we shouldn't hit it )
 G54 G1 F[#<_ProbeFeed1>] G91
