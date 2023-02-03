@@ -15,9 +15,9 @@ g0 a0b0
 M66 E0 L0
 o<v2_calib_probe_top_plane> call [0]
 
+o<cmm_go_to_clearance_y> call
 
 (ALIGN A PERPENDICULAR TO Z)
-g21
 G0 z0
 g0 x63.5
 g0 a90b0y0
@@ -43,7 +43,7 @@ o<cmm_go_to_clearance_y> call
 
 
 (PROBE FIXTURE PLANE AT A90)
-o<v2_calib_probe_fixture_plane_a90> call [0]
+o<v2_calib_probe_fixture_plane_a90> call [0] [90]
 o<cmm_go_to_clearance_y> call
 
 
@@ -124,5 +124,7 @@ G0 Z#<_ToolZProbe>
 M66 E0 L0
 o<v2_calib_probe_spindle_at_tool_probe> call [#<x_mm>][#<y_mm>][#<z_mm>]
 o<cmm_go_to_clearance_y> call
+
+G53 G0 Z0
 
 %
