@@ -1,0 +1,6 @@
+%
+
+(B AXIS)
+o<v2_calib_verify_b_home> call [#<_CALIB_VERIFY_HOMING_B>]
+
+%
