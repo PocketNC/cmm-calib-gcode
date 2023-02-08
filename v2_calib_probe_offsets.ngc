@@ -1,5 +1,5 @@
 %
-o<v2_calib_init_probe_offsets_state> call
+o<v2_calib_init_probe_offsets_state> call [#<_CALIB_PROBE_OFFSETS>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 
@@ -60,7 +60,7 @@ M66 E0 L0
 o<v2-calib-align-fixture-perp-y> call [#<yPos>][#<aAngle>][45]
 #<bAngle> = [#<_value>]
 M66 E0 L0
-o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>]
+o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>][#<_CALIB_PROBE_OFFSETS>]
 M66 E0 L0
 
 (PROBE HOME OFFSETS X SET-1)
@@ -70,7 +70,7 @@ o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][45]
 #<bAngle> = [#<_value>]
 M66 E0 L0
 o<cmm_go_to_clearance_y> call
-o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
+o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>][#<_CALIB_PROBE_OFFSETS>]
 
 (PROBE HOME OFFSETS Y SET-2)
 g0 b225
@@ -78,7 +78,7 @@ M66 E0 L0
 o<v2-calib-align-fixture-perp-y> call [#<yPos>][#<aAngle>][225]
 #<bAngle> = [#<_value>]
 M66 E0 L0
-o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>]
+o<v2_calib_probe_home_offset_y> call [#<yPos>][#<aAngle>][#<bAngle>][#<_CALIB_PROBE_OFFSETS>]
 
 (PROBE HOME OFFSETS Y SET-2)
 g0 b225
@@ -87,7 +87,7 @@ o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][225]
 #<bAngle> = [#<_value>]
 M66 E0 L0
 o<cmm_go_to_clearance_y> call
-o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
+o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>][#<_CALIB_PROBE_OFFSETS>]
 
 
 (PERFORM TOOL PROBE)
