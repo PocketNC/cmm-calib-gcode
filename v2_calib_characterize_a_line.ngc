@@ -9,6 +9,7 @@ M66 E0 L0
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_CHARACTERIZE_A_LINE>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
+o<cmm_go_to_clearance_x> call
 o<v2_calib_prep_probe_fixture_fin> call
 
 M66  E0 L0

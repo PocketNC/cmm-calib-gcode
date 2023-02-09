@@ -14,5 +14,8 @@ M66 E0 L0
 o<v2-calib-characterize-b-line> call [0] [#<_CALIB_VERIFY_B_LINE>]
 
 M66 E0 L0
+o<v2_calib_verify_b>
+
+M66 E0 L0
 o<cmm_go_to_clearance_y> call
 %
