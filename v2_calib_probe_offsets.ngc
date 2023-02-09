@@ -21,7 +21,11 @@ o<cmm_go_to_clearance_y> call
 (FIXTURE TOP PLANE)
 M66 E0 L0
 o<v2_calib_probe_top_plane> call [0]
+o<cmm_go_to_clearance_y> call
 
+g0 b180
+M66 E0 L0
+o<v2_calib_probe_top_plane_180> call [0]
 o<cmm_go_to_clearance_y> call
 
 (ALIGN A PERPENDICULAR TO Z)
