@@ -1,4 +1,0 @@
-%
-o<v2_calib_init_probe_features_stage> call [#<_CALIB_VERIFY_HOMING_A>]
-G4 P1
-%
