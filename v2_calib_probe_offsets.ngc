@@ -109,8 +109,8 @@ G90
 G49
 G53 G0 Z0
 
-G0 X[#<_ini[TOOL_PROBE]PROBE_X>] 
-G0 Y[#<_ini[TOOL_PROBE]PROBE_Y>]
+G0 X[#<_ini[TOOL_PROBE]PROBE_X> + #<_v2_calib_x_offset>] 
+G0 Y[#<_ini[TOOL_PROBE]PROBE_Y> + #<_v2_calib_y_offset>]
 G0 A[#<a0>]
 
 G53 G1 F[#<_ProbeFastFeed>] Z[#<_ProbeFastZ>]( move tool closer to switch -- we shouldn't hit it )
@@ -127,8 +127,8 @@ G0 Z0
 G0 Y2.5
 G0 Z#<_ToolZProbe>
 
-#<x_mm> = [ #<_ini[TOOL_PROBE]PROBE_X> * 25.4 ]
-#<y_mm> = [ #<_ini[TOOL_PROBE]PROBE_Y> * 25.4 ]
+#<x_mm> = [ [ #<_ini[TOOL_PROBE]PROBE_X> + #<_v2_calib_x_offset> ] * 25.4 ]
+#<y_mm> = [ [ #<_ini[TOOL_PROBE]PROBE_Y> + #<_v2_calib_y_offset> ] * 25.4 ]
 #<z_mm> = [ #<_ToolZProbe> * 25.4 ]
 
 
