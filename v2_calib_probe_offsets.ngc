@@ -2,6 +2,7 @@
 o<v2_calib_init_probe_offsets_state> call [#<_CALIB_PROBE_OFFSETS>]
 o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
+o<v2_calib_prep_probe_fixture_fin> call
 
 g21
 g90
