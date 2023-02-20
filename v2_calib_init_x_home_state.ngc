@@ -1,6 +1,5 @@
 %
 
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_HOMING_X>]
-G4 P1 ; add some extra time to ensure it only runs once
 
 %

@@ -1,4 +1,3 @@
 %
 o<v2_calib_calibrate> call
-G4 P1 ; add some extra time to ensure it only runs once
 %
