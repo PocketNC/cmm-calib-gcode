@@ -20,4 +20,5 @@ o<v2_calib_verify_a> call
 M66 E0 L0
 o<cmm_go_to_clearance_x> call
 o<cmm_go_to_clearance_y> call
+o<cmm_disconnect> call
 %

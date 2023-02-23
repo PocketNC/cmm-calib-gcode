@@ -20,4 +20,5 @@ o<v2_calib_probe_top_plane> call [0]
 M66 E0 L0
 o<cmm_go_to_clearance_y> call
 
+o<cmm_disconnect> call
 %

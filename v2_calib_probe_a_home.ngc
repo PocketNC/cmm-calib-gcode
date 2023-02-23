@@ -5,4 +5,5 @@ g0 y0a0b0
 M66 E0 L0
 o<cmm_connect> call
 o<v2_calib_probe_fixture_fin> call [0] [-17.5] [#<_CALIB_HOMING_A>]
+o<cmm_disconnect> call
 %

@@ -28,4 +28,6 @@ o<cmm_go_to_clearance_x> call
 o<cmm_go_to_clearance_y> call
 
 g0 a#<aAngleTrueZero>
+
+o<cmm_disconnect> call
 %

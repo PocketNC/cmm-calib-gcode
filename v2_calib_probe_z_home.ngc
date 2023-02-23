@@ -12,4 +12,5 @@ M66 E0 L0
 o<cmm_connect> call
 o<v2_calib_probe_spindle> call [0] [0] [#<_CALIB_HOMING_Z>]
 
+o<cmm_disconnect> call
 %

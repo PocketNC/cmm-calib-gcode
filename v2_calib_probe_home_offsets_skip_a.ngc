@@ -49,4 +49,5 @@ o<v2-calib-align-fixture-perp-x> call [#<yPos>][#<aAngle>][225]
 M66 E0 L0
 o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
 
+o<cmm_disconnect> call
 %

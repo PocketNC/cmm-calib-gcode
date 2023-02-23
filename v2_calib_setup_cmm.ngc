@@ -1,5 +1,6 @@
 %
 o<cmm_connect> call
 o<v2_calib_setup_cmm> call
+o<cmm_disconnect> call
 %
 

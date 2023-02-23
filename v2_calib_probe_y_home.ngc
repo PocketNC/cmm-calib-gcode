@@ -14,4 +14,5 @@ o<cmm_set_common_probe_props> call [1] [3] [2] [5]
 o<v2_calib_probe_fixture_ball_top> call [0] [0] [#<_CALIB_HOMING_Y>]
 o<cmm_move_relative> call [0] [125] [0]
 
+o<cmm_disconnect> call
 %

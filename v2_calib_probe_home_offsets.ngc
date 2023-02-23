@@ -62,4 +62,5 @@ o<v2_calib_probe_home_offset_x> call [#<yPos>][#<aAngle>][#<bAngle>]
 o<v2_calib_calc_home_offsets> call
 o<cmm_go_to_clearance_y> call
 
+o<cmm_disconnect> call
 %

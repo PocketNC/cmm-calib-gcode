@@ -17,4 +17,5 @@ o<cmm_connect> call
 o<v2_calib_probe_spindle_pos_v2_50> call [0][0]
 o<v2_calib_verify_spindle_pos_v2_50> call
 
+o<cmm_disconnect> call
 %

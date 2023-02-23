@@ -52,4 +52,5 @@ g0 y0a90b0
 M66  E0 L0
 o<v2_calib_probe_fixture_plane_a90> call [0]
 o<cmm_go_to_clearance_y> call
+o<cmm_disconnect> call
 %

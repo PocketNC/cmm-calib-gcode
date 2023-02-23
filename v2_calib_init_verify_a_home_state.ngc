@@ -4,5 +4,6 @@ o<v2_calib_init_probe_features_stage> call [#<_CALIB_VERIFY_HOMING_A>]
 o<cmm_connect> call
 o<v2_calib_prep_probe_fixture_fin> call
 G4 P1 ; add some extra time to ensure it only runs once
+o<cmm_disconnect> call
 
 %

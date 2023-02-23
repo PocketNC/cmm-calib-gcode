@@ -139,4 +139,5 @@ o<cmm_go_to_clearance_y> call
 
 G53 G0 Z0
 
+o<cmm_disconnect> call
 %

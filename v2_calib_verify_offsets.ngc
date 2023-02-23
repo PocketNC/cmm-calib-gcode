@@ -77,4 +77,5 @@ o<cmm_go_to_clearance_y> call
 o<v2_calib_verify_x0_final> call
 o<v2_calib_verify_y0_final> call
 
+o<cmm_disconnect> call
 %

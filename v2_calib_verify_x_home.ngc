@@ -7,4 +7,5 @@ o<cmm_connect> call
 M66 E0 L0
 o<v2_calib_verify_x_home> call
 
+o<cmm_disconnect> call
 %

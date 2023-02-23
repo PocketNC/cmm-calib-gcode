@@ -8,5 +8,6 @@ o<cmm_set_common_probe_props> call [1] [5] [8] [5]
 o<cmm_go_to_clearance_y> call
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_VERIFY_HOMING_X>]
 G4 P1 ; add some extra time to ensure it only runs once
+o<cmm_disconnect> call
 
 %

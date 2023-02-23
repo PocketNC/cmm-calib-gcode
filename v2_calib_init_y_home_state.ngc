@@ -4,5 +4,6 @@ o<cmm_connect> call
 o<cmm_go_to_clearance_y> call
 o<v2_calib_init_probe_features_stage> call [#<_CALIB_HOMING_Y>]
 G4 P1 ; add some extra time to ensure it only runs once
+o<cmm_disconnect> call
 
 %
